@@ -1,4 +1,5 @@
 #include "DigiKeyboard.h"
+#include "DigiKeyboardDe.h"
 
 void setup() {
   DigiKeyboard.delay(1000);   // This delay can't be lower than 1 second
@@ -12,44 +13,29 @@ void setup() {
   
   /**  Write the Program Name  **/
   DigiKeyboard.print("notepad");                     // Will "type" notepad on whatever window is active 
-  delay(250);
+  DigiKeyboard.delay(250);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  delay(1000);
+  DigiKeyboard.delay(1000);
 
   /**  Write Text  **/
-  DigiKeyboard.println("Hello World"); 
-
-   DigiKeyboard.println("                                     __,,,");
-   DigiKeyboard.println("                              _.--\'    /");
-   DigiKeyboard.println("                           .-\'        /");
-   DigiKeyboard.println("                         .\'          |");
-   DigiKeyboard.println("                        .\'           /");
-   DigiKeyboard.println("                       /_____________|");
-   DigiKeyboard.println("                     /`~~~~~~~~~~~~~~/");
-   DigiKeyboard.println("                   /`               /");
-   DigiKeyboard.println("    ____,....----'/_________________|---....,___");
-   DigiKeyboard.println(",--""`             `~~~~~~~~~~~~~~~~~~`           `\"\"--,");
-   DigiKeyboard.println("`'----------------.----,------------------------,-------'`");
-    delay(250);
-   DigiKeyboard.println("                   \\_/`\\  \-\"-/` /\  \ ");
-    delay(250);
+   DigiKeyboardDe.println("Hallo Haeckse"); 
    DigiKeyboard.sendKeyStroke(KEY_ENTER);
    DigiKeyboard.sendKeyStroke(KEY_ENTER);
-   DigiKeyboard.println("       +------------------------------------+");
-   DigiKeyboard.println("       | >>>         FROHE OSTERN       <<< |");
-   DigiKeyboard.println("       +------------------------------------+");
-   DigiKeyboard.println("               Du hast es geschafft!");
-   DigiKeyboard.println("           Viel Spass mit dem Entenstummel");
-   DigiKeyboard.println("                     wuenschen Dir");
-   DigiKeyboard.println("                Deine Defense Haecksen");
-    delay(250);
+   DigiKeyboardDe.println("       +------------------------------------+");
+   DigiKeyboardDe.println("       | >>>         FROHE OSTERN       <<< |");
+   DigiKeyboardDe.println("       +------------------------------------+");
+   DigiKeyboardDe.println("               Du hast es geschafft!");
+   DigiKeyboardDe.println("           Viel Spass mit dem Entenstummel");
+   DigiKeyboardDe.println("                     wuenschen Dir");
+   DigiKeyboardDe.println("                Deine Defense Haecksen");
+   DigiKeyboard.delay(250);
    DigiKeyboard.sendKeyStroke(KEY_ENTER);
    DigiKeyboard.sendKeyStroke(KEY_ENTER);
-   DigiKeyboard.println("       =======================================");
+   DigiKeyboardDe.println("       ========================================");
    DigiKeyboard.sendKeyStroke(KEY_ENTER);
-   DigiKeyboard.println("       +++ Unterstuety uns auf haecksen.org +++");
+   DigiKeyboardDe.println("       +++ Unterstuetz uns auf haecksen.org +++");
    DigiKeyboard.sendKeyStroke(KEY_ENTER);
-   DigiKeyboard.println("       =======================================");
+   DigiKeyboardDe.println("       ========================================");
   
     
 }
